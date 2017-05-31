@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.repository.CrudRepository;
 import se.nackademin.model.Contact;
 import se.nackademin.model.ContactRepository;
 
@@ -16,6 +17,7 @@ public class BackendexaminationprojecthreerbApplication implements CommandLineRu
         SpringApplication.run(BackendexaminationprojecthreerbApplication.class, args);
     }
 
+    // Mock setup function for instant db population
     @Override
     public void run(String... args) throws Exception {
         Contact contact1 = new Contact()

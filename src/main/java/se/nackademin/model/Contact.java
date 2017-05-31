@@ -78,7 +78,7 @@ public class Contact {
         return city;
     }
 
-    // Builder
+    // Builder functions for chaining contact creation
     public Contact firstName(String firstName) {
         this.firstName = firstName;
         return this;

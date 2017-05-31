@@ -7,4 +7,6 @@ public interface ContactRepository extends CrudRepository<Contact, Long> {
     Iterable<Contact> findContactByEmailContains(String email);
 
     Iterable<Contact> findContactByFirstNameContains(String firstName);
+
+    Iterable<Contact> findContactByFirstNameContainsOrLastNameContains(String firstName, String lastName);
 }
