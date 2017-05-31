@@ -4,17 +4,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.repository.CrudRepository;
 import se.nackademin.model.Contact;
 import se.nackademin.model.ContactRepository;
 
 @SpringBootApplication
-public class BackendexaminationprojecthreerbApplication implements CommandLineRunner {
+public class BackendExaminationProjectThreeRBApplication implements CommandLineRunner {
     @Autowired
     private ContactRepository contactRepository;
 
     public static void main(String[] args) {
-        SpringApplication.run(BackendexaminationprojecthreerbApplication.class, args);
+        SpringApplication.run(BackendExaminationProjectThreeRBApplication.class, args);
     }
 
     // Mock setup function for instant db population
